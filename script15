@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo 'get tools you need'
+sudo apt-get install build-essential automake checkinstall cvs subversion git-core mercurial
+
+echo 'downloading the sources'
+wget https://hisham.hm/htop/releases/1.0.2/htop-1.0.2.tar.gz
+
+echo 'unzip file'
+tar -xvf 
+
+echo 'check the files'
+ls
+
+echo 'cd to htop'
+cd htop-1.0.2
+
+echo 'run the configure'
+
+echo ' chmod +x to allow to run'
+chmod +x configure
+
+./configure
+
+echo 'make'
+make
+
+sudo checkinstall
+
